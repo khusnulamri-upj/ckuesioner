@@ -61,5 +61,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+    
+        <?php if (Configure::read('debug') > 1) :?>
+            <div id="cakeSession" class="cakeSession">
+                <h3>Session Info:</h3>
+                <?php pr($_SESSION); ?>
+                <?php pr($_SESSION['_Login']); ?>
+            </div>
+        <?php endif; ?>
 </body>
 </html>

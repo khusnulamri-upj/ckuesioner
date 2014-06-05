@@ -1,5 +1,7 @@
-<?php echo $this->Html->link('<< Kembali',array('controller' => 'kuesioners', 'action' => 'index',),array('style' => 'text-decoration:none;color:#333;display:block;margin-bottom:20px;')); ?>
-
+<div style="background-color:#DDD;padding:10px 10px 10px 10px;margin-bottom:20px;">
+<span><?php echo $this->Html->link('<< Kembali',array('controller' => 'kuesioners', 'action' => 'index',),array('style' => 'text-decoration:none;color:#333;display:block;')); ?></span>
+</div>
+    
 <h1 style="font-size:165%;"><?php echo h($kuesioner['Kuesioner']['nama']); ?></h1>
 
 <?php
